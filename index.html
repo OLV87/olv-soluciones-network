@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050914">
+<meta name="description" content="OLV Soluciones Network: instalación de Internet WiFi, configuración MikroTik, cámaras de seguridad y mantenimiento de computadoras en La Libertad, Chiapas.">
+<title>OLV Soluciones Network | Catálogo de servicios</title>
+<style>
+:root{--bg:#050914;--panel:#0b1427;--blue:#087cff;--cyan:#00d9ff;--white:#f4f8ff;--muted:#b8c7dc;--line:#123d72}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at top,#0b1b38 0,#050914 54%);color:var(--white);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+header{padding:18px 0;border-bottom:1px solid #14335b;background:#050914e8}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand img{width:58px;height:58px;object-fit:cover;border-radius:50%;border:2px solid var(--blue)}.brand strong{display:block;font-size:1.05rem;letter-spacing:2px}.brand span{display:block;color:var(--cyan);font-size:.76rem;letter-spacing:4px}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{text-decoration:none;color:var(--muted);font-size:.92rem}nav a:hover{color:var(--cyan)}
+.hero{padding:36px 0 26px}.hero img{display:block;width:100%;height:auto;max-height:450px;object-fit:cover;object-position:center;border:1px solid #0754a7;border-radius:18px;box-shadow:0 0 35px #006dff2c}
+.intro{text-align:center;padding:26px 0 12px}.eyebrow{color:var(--cyan);font-weight:bold;text-transform:uppercase;letter-spacing:3px;font-size:.78rem}.intro h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.08;margin:10px 0;background:linear-gradient(90deg,#fff,#70cfff,#1684ff);-webkit-background-clip:text;background-clip:text;color:transparent}.intro p{color:var(--muted);max-width:720px;margin:12px auto 22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:linear-gradient(100deg,#087cff,#00bfe9);color:#fff;text-decoration:none;font-weight:bold;border-radius:999px;padding:13px 21px;box-shadow:0 0 22px #007bff35;transition:transform .2s}.btn:hover{transform:translateY(-2px)}.btn.secondary{background:transparent;border:1px solid var(--blue);box-shadow:none}
+.section{padding:38px 0}.section-head{text-align:center;margin-bottom:24px}.section-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:6px 0}.section-head p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.service{background:linear-gradient(145deg,#0d1b33,#070d19);border:1px solid #123e70;border-radius:16px;padding:24px;position:relative;overflow:hidden}.service:before{content:"";position:absolute;left:0;top:0;width:100%;height:3px;background:linear-gradient(90deg,var(--blue),var(--cyan),transparent)}.icon{width:52px;height:52px;display:grid;place-items:center;border-radius:14px;background:#082b56;border:1px solid #087cff;color:var(--cyan);font-size:1.7rem}.service h3{margin:14px 0 7px;font-size:1.35rem}.service p{color:var(--muted);margin:0 0 12px}.service ul{padding-left:19px;margin:10px 0 18px;color:#e4edfb}.service li{margin:5px 0}.service .btn{padding:10px 15px;font-size:.9rem}
+.mikro{grid-column:1/-1;display:grid;grid-template-columns:1fr 1.2fr;gap:24px;align-items:center}.mikro .icon{font-size:1.35rem;width:auto;display:inline-flex;padding:0 14px}.mikro ul{columns:2;column-gap:28px}.mikro li{break-inside:avoid}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.why div{padding:18px 12px;text-align:center;border:1px solid #123e70;border-radius:13px;background:#091326}.why b{display:block;margin-top:8px}.why span{font-size:1.7rem;color:var(--cyan)}
+.cta{padding:30px;text-align:center;border:1px solid #087cff;border-radius:18px;background:linear-gradient(120deg,#07152c,#0b2143);box-shadow:0 0 35px #007bff17}.cta h2{margin:0 0 8px;font-size:clamp(1.5rem,3vw,2.2rem)}.cta p{color:var(--muted);margin:0 auto 20px;max-width:650px}
+footer{padding:25px 0 35px;text-align:center;color:var(--muted);font-size:.9rem}footer strong{color:var(--white)}.small{font-size:.8rem;color:#8ea4c1}
+.float{position:fixed;right:18px;bottom:18px;z-index:5;border-radius:50px;padding:13px 17px;background:#19c463;color:#fff;text-decoration:none;font-weight:bold;box-shadow:0 5px 25px #0008}
+@media(max-width:760px){.nav{align-items:flex-start}.nav nav{display:none}.hero{padding-top:20px}.hero img{border-radius:10px}.grid{grid-template-columns:1fr}.mikro{grid-column:auto;grid-template-columns:1fr}.mikro ul{columns:1}.why{grid-template-columns:repeat(2,1fr)}.service{padding:20px}.intro{padding-top:20px}.float{right:12px;bottom:12px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="OLV Soluciones Network inicio">
+      <img src="assets/logo-olv.png" alt="Logotipo OLV Soluciones Network">
+      <div><strong>OLV SOLUCIONES</strong><span>NETWORK</span></div>
+    </a>
+    <nav aria-label="Navegación principal">
+      <a href="#servicios">Servicios</a><a href="#nosotros">Por qué elegirnos</a><a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+<main id="inicio">
+  <section class="hero wrap" aria-label="Portada de OLV Soluciones Network">
+    <img src="assets/portada-olv.png" alt="OLV Soluciones Network: Internet, cámaras, computadoras y configuración MikroTik">
+  </section>
+  <section class="intro wrap">
+    <div class="eyebrow">La Libertad, Chiapas</div>
+    <h1>Tecnología que te conecta.<br>Soluciones que funcionan.</h1>
+    <p>Servicios tecnológicos para tu hogar y negocio: conectividad inalámbrica, redes seguras, videovigilancia y equipos de cómputo. Atención personalizada y cotización directa por WhatsApp.</p>
+    <a class="btn" href="https://wa.me/529341109645?text=Hola%2C%20vi%20el%20cat%C3%A1logo%20de%20OLV%20Soluciones%20Network%20y%20quiero%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener">✆ Solicitar cotización por WhatsApp</a>
+  </section>
+  <section class="section wrap" id="servicios">
+    <div class="section-head"><div class="eyebrow">Nuestro catálogo</div><h2>Servicios profesionales</h2><p>Elige el servicio que necesitas y escríbenos para recibir una cotización.</p></div>
+    <div class="grid">
+      <article class="service">
+        <div class="icon" aria-hidden="true">⌁</div>
+        <h3>Instalación de Internet WiFi</h3>
+        <p>Conexiones inalámbricas estables para tu hogar, comercio o empresa.</p>
+        <ul><li>Instalación de antenas y equipos CPE</li><li>Configuración de routers y puntos de acceso</li><li>Optimización de señal y cobertura</li><li>Diagnóstico de fallas de conexión</li></ul>
+        <a class="btn secondary" href="https://wa.me/529341109645?text=Hola%2C%20quiero%20cotizar%20instalaci%C3%B3n%20de%20Internet%20WiFi." target="_blank" rel="noopener">Cotizar Internet</a>
+      </article>
+      <article class="service">
+        <div class="icon" aria-hidden="true">⚙</div>
+        <h3>Configuración y soporte MikroTik</h3>
+        <p>Configuración de redes para negocios, proveedores de Internet y usuarios que requieren una red confiable.</p>
+        <ul><li>Balanceo de carga y failover</li><li>Firewall, NAT y seguridad</li><li>QoS, Queue Tree, PCQ y Simple Queues</li><li>Control de ancho de banda por IP</li><li>VPN: WireGuard, L2TP e IPsec</li><li>PPPoE, Hotspot, DHCP y VLAN</li><li>Optimización de RouterOS v7</li><li>Diagnóstico y solución de problemas</li></ul>
+        <a class="btn secondary" href="https://wa.me/529341109645?text=Hola%2C%20quiero%20cotizar%20configuraci%C3%B3n%20o%20soporte%20MikroTik." target="_blank" rel="noopener">Cotizar MikroTik</a>
+      </article>
+      <article class="service">
+        <div class="icon" aria-hidden="true">◉</div>
+        <h3>Instalación de cámaras</h3>
+        <p>Soluciones de videovigilancia para cuidar tus espacios y tener mayor tranquilidad.</p>
+        <ul><li>Instalación de cámaras de seguridad</li><li>Configuración de grabadores y cámaras IP</li><li>Visualización desde celular (según equipo)</li><li>Mantenimiento y revisión del sistema</li></ul>
+        <a class="btn secondary" href="https://wa.me/529341109645?text=Hola%2C%20quiero%20cotizar%20instalaci%C3%B3n%20de%20c%C3%A1maras." target="_blank" rel="noopener">Cotizar cámaras</a>
+      </article>
+      <article class="service">
+        <div class="icon" aria-hidden="true">⌘</div>
+        <h3>Mantenimiento de computadoras</h3>
+        <p>Ayudamos a que tus equipos funcionen de forma eficiente y confiable.</p>
+        <ul><li>Diagnóstico y mantenimiento preventivo</li><li>Limpieza interna y optimización</li><li>Instalación de sistema operativo y programas</li><li>Detección de fallas y reparación</li></ul>
+        <a class="btn secondary" href="https://wa.me/529341109645?text=Hola%2C%20quiero%20cotizar%20mantenimiento%20de%20computadora." target="_blank" rel="noopener">Cotizar computadora</a>
+      </article>
+    </div>
+  </section>
+  <section class="section wrap" id="nosotros">
+    <div class="section-head"><div class="eyebrow">Tu aliado en tecnología</div><h2>¿Por qué elegir OLV?</h2></div>
+    <div class="why">
+      <div><span>◈</span><b>Confiabilidad y seguridad</b></div>
+      <div><span>◎</span><b>Atención personalizada</b></div>
+      <div><span>◷</span><b>Servicio rápido y eficiente</b></div>
+      <div><span>⌁</span><b>Soporte técnico confiable</b></div>
+    </div>
+  </section>
+  <section class="section wrap" id="contacto">
+    <div class="cta">
+      <div class="eyebrow">Atención en La Libertad, Chiapas</div>
+      <h2>¿Qué solución necesitas?</h2>
+      <p>Cuéntanos qué equipo o servicio necesitas. Te atenderemos por WhatsApp para conocer los detalles y preparar tu cotización.</p>
+      <a class="btn" href="https://wa.me/529341109645?text=Hola%2C%20me%20interesan%20los%20servicios%20de%20OLV%20Soluciones%20Network." target="_blank" rel="noopener">Escribir al 934 110 9645</a>
+      <p class="small" style="margin-top:14px">Precios bajo cotización · La disponibilidad y el alcance se confirman al solicitar el servicio.</p>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><strong>OLV SOLUCIONES NETWORK</strong><br>Conectamos · Protegemos · Optimizamos<br><span class="small">La Libertad, Chiapas · Catálogo digital de servicios</span></div></footer>
+<a class="float" href="https://wa.me/529341109645?text=Hola%2C%20vengo%20del%20cat%C3%A1logo%20digital%20de%20OLV." target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">WhatsApp ↗</a>
+</body>
+</html>
